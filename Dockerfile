@@ -19,5 +19,8 @@ RUN chmod +x /root/init.sh
 # 将配置文件复制到容器中
 COPY config/gost.json /etc/gost/gost.json
 
+# 安装 bash
+RUN apk add --no-cache bash
+
 # 启动命令，执行 /bin/gost
-ENTRYPOINT ["/root/init.sh && /bin/gost"]
+ENTRYPOINT ["/bin/bash", "-c", "/root/init.sh && /bin/gost"]

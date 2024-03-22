@@ -14,7 +14,7 @@ docker run -d --name gost-forwarder \
     -e RAB_GOST_FORWARDER_AUTH_USERNAME="admin" \
     -e RAB_GOST_FORWARDER_AUTH_PASSWORD="admin" \
     -e RAB_GOST_FORWARDER_AUTHER="auther-0" \
-    rabir/gost-forwarder:latest
+    rabbir/gost-forwarder:latest
 ```
 
 # 文档
